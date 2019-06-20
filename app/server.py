@@ -9,7 +9,7 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://doc-0s-a0-docs.googleusercontent.com/docs/securesc/4eubldi6n0b81t2bn5gmk05ceifoamjj/601h8v69v9saacsima0t1sat221qivo8/1561046400000/03764800907144942911/03764800907144942911/1zLjFtKOutBVkhK7IfUYgHuMWfJl8WQn4?e=download&nonce=f24cb9pt323fq&user=03764800907144942911&hash=0cc7tjqn1d335fmj7q0ekvnjv6r0oieg'
+export_file_url = 'http://zapp-brannigan.ge.issia.cnr.it/resnet-50-stage-2-2019-06-19_13.08.13-export.pkl'
 export_file_name = 'resnet-50-stage-2-2019-06-19_13.08.13-export.pkl'
 
 classes = ['bagel', 'chihuahua', 'chocolate', 'dalmatian', 'dog', 'duckling', 'friedchicken', 'guacamole', 'icecream', 'icecreamcone', 'kitten', 'labradoodle', 'marshmallow', 'mop', 'muffin', 'painauchocolat', 'parrot', 'plantain', 'sharpei', 'sheepdog', 'shiba', 'sloth']
