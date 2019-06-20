@@ -10,9 +10,9 @@ from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
 export_file_url = 'https://drive.google.com/open?id=1zLjFtKOutBVkhK7IfUYgHuMWfJl8WQn4'
-export_file_name = 'export.pkl'
+export_file_name = 'resnet-50-stage-2-2019-06-19_13.08.13-export.pkl'
 
-classes = ['black', 'grizzly', 'teddys']
+classes = ['bagel', 'chihuahua', 'chocolate', 'dalmatian', 'dog', 'duckling', 'friedchicken', 'guacamole', 'icecream', 'icecreamcone', 'kitten', 'labradoodle', 'marshmallow', 'mop', 'muffin', 'painauchocolat', 'parrot', 'plantain', 'sharpei', 'sheepdog', 'shiba', 'sloth']
 path = Path(__file__).parent
 
 app = Starlette()
