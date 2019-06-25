@@ -9,8 +9,10 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'http://zapp-brannigan.ge.issia.cnr.it/resnet-50-stage-2-2019-06-19_13.08.13-export.pkl'
-export_file_name = 'resnet-50-stage-2-2019-06-19_13.08.13-export.pkl'
+#export_file_url = 'http://zapp-brannigan.ge.issia.cnr.it/resnet-50-stage-2-2019-06-19_13.08.13-export.pkl'
+export_file_url = 'https://srv-file2.gofile.io/download/4azGQy/resnet-50-stage-2-2019-06-19_130813-export.pkl'
+#export_file_name = 'resnet-50-stage-2-2019-06-19_13.08.13-export.pkl'
+export_file_name = 'resnet-50-stage-2-2019-06-19_130813-export.pkl'
 
 classes = ['bagel', 'chihuahua', 'chocolate', 'dalmatian', 'dog', 'duckling', 'friedchicken', 'guacamole', 'icecream', 'icecreamcone', 'kitten', 'labradoodle', 'marshmallow', 'mop', 'muffin', 'painauchocolat', 'parrot', 'plantain', 'sharpei', 'sheepdog', 'shiba', 'sloth']
 path = Path(__file__).parent
