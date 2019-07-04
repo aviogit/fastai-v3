@@ -13,7 +13,7 @@
 
 <div class='center'>
 
-    <div class='title'>Below, there are all the images used for training (just too few, for the moment, to have decent percentages of accuracy).</div>
+    <div class='title'><font size=4vw>Below there is part of the images used for training. Given that they were just too few to have decent classification accuracy, about one hundred other images per class have been added to the <a href="https://github.com/aviogit/deep-learning-datasets">dataset</a>. This small project is a good example of <em>transfer learning</em> in action: the starting point is a <a href="https://arxiv.org/abs/1512.03385">ResNet-50</a>, pre-trained with <a href="http://www.image-net.org/">ImageNet</a> images. Then the <a href="https://www.fast.ai/">Fast.ai</a> library is used to replace the last fully connected layer with a new (untrained) FC layer with as many neurons as the number of classes of the problem. Then the whole model is further trained (fine-tuned) through the <a href="https://docs.fast.ai/basic_train.html#Learner.unfreeze">unfreeze()</a> function and a variable learning rate: the first convolutional layers are trained with a very low learning rate, while the last layers are trained with a higher LR. This makes the neural network use the kernels (= feature detectors) learned on the ImageNet dataset to <em>excite</em> the last layer of neurons, that now <em>fire</em> according to the new classification of images provided by the far smaller training set used to tackle the «Chihuahua or Muffin» sub-problem.</font></div>
 
  <table style="width:100%">
   <tr>
