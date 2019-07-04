@@ -15,8 +15,11 @@ from starlette.staticfiles import StaticFiles
 #export_file_url = 'https://srv-file2.gofile.io/download/4azGQy/resnet-50-stage-2-2019-06-19_130813-export.pkl'
 #export_file_name = 'resnet-50-stage-2-2019-06-19_130813-export.pkl'
 
-export_file_url = 'https://drive.google.com/uc?export=download&id=1zLjFtKOutBVkhK7IfUYgHuMWfJl8WQn4'
-export_file_name = 'uc?export=download&id=1zLjFtKOutBVkhK7IfUYgHuMWfJl8WQn4'
+#export_file_url = 'https://drive.google.com/uc?export=download&id=1zLjFtKOutBVkhK7IfUYgHuMWfJl8WQn4'
+#export_file_name = 'uc?export=download&id=1zLjFtKOutBVkhK7IfUYgHuMWfJl8WQn4'
+
+export_file_url = 'http://zapp-brannigan.ge.imati.cnr.it/chihuahua-or-muffin-resnet-models/resnet-50-stage-4-2019-07-02_17.51.51-pth-export-0.045576-error-rate.pkl'
+export_file_name = 'resnet-50-stage-4.pkl'
 
 classes = ['bagel', 'chihuahua', 'chocolate', 'dalmatian', 'dog', 'duckling', 'friedchicken', 'guacamole', 'icecream', 'icecreamcone', 'kitten', 'labradoodle', 'marshmallow', 'mop', 'muffin', 'painauchocolat', 'parrot', 'plantain', 'sharpei', 'sheepdog', 'shiba', 'sloth']
 path = Path(__file__).parent
@@ -72,4 +75,4 @@ async def analyze(request):
 
 if __name__ == '__main__':
     if 'serve' in sys.argv:
-        uvicorn.run(app=app, host='0.0.0.0', port=5000, log_level="info")
+        uvicorn.run(app=app, host='0.0.0.0', port=55555, log_level="info")
