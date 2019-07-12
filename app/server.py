@@ -9,6 +9,8 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
+from datetime import datetime
+
 #export_file_url = 'http://zapp-brannigan.ge.issia.cnr.it/resnet-50-stage-2-2019-06-19_13.08.13-export.pkl'
 #export_file_name = 'resnet-50-stage-2-2019-06-19_13.08.13-export.pkl'
 
@@ -69,6 +71,8 @@ async def analyze(request):
     img_data = await request.form()
     img_bytes = await (img_data['file'].read())
     img = open_image(BytesIO(img_bytes))
+    fname = str(datetime.now()).replace(' ', '-')
+    img.save('/tmp/saved-images/' + fname + '.jpg')
     prediction = learn.predict(img)[0]
     return JSONResponse({'result': str(prediction)})
 
